@@ -1,0 +1,61 @@
+3 data types so far:
+number, boolean, and string
+
+number is just a number, no quotes
+boolean is either 'true' or 'false' without quotation marks
+string is text/numbers inside of quotation marks
+
+variables are a word or name set to a value of a data type
+they are set with 'variable_name' and '='
+'my_num = 25' sets a variable 'my_numb' to the value of 25
+
+math operators:
+addition '+'
+subtraction '-'
+multiplication '*'
+division '/'
+exponentiation '**'
+modulo '%'
+
+'puts' (put string) prints a string or variable to the screen and creates a new line after
+'print' just prints a string or variable to the screen and doesn't create a new line
+to print a string in the middle of a sentence, use '#{string_name}' in place of a word
+
+string methods:
+'string.method' is the syntax
+
+'.length' returns the length of the string
+'.reverse' returns the string backwards
+'.upcase' returns the string in all caps
+'.downcase' returns the string in all lowercase
+'.capitalize' returns the string with the first letter capitalized
+
+'#' indicates a single-line comment
+anything in a comment is not read by the interpreter
+
+'=begin' indicates the start of a multi-line comment
+'=end' indicates the end of a multi-line comment
+anything between these is not read by the interpreter
+no '#'s are required for these comments
+
+naming conventions for variables:
+words should always be in lowercase
+words should be separated by an underscore '_'
+words should only have numbers and letters
+
+'gets' is a method that receives input from a user
+Ruby automatically creates a new line after every input
+'.chomp' deletes that extra line
+
+when using a method to alter a variable, you can use '!' to avoid reassigning.
+example = test
+example.capitalize!
+results in 'example = Test'
+
+control flow:
+'if' statements activate if assigned to a value that is true
+starts with 'if', ends with 'end'
+'elsif' is an alternate 'if' statement. tests this if the 'if' statement and any other 'elsif' statements above are not true
+'else' catches anything not specificially mentioned in 'if' and 'elsif' statements
+
+
