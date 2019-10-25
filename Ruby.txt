@@ -57,5 +57,19 @@ control flow:
 starts with 'if', ends with 'end'
 'elsif' is an alternate 'if' statement. tests this if the 'if' statement and any other 'elsif' statements above are not true
 'else' catches anything not specificially mentioned in 'if' and 'elsif' statements
+'unless' activates if assigned to a value that is false
 
+operators:
+'=' is an assignment operator, meaning it is used to assign values to variables
+example = true
+
+'==' is used as a comparator or relational operator, meaning it checks to see if two things are equal to each other
+'!=' is used to check if two values are not equal
+'>' '<' '<=' and '>=' are the other comparators
+
+logical/boolean operators are used to produce a 'true' or 'false' value by comparing 2 or more values of 'true' or 'false'.
+'&&' or 'and' returns true only if all values being operated upon are true
+'||' or 'or' returns true if any of the values being operated upon are true. also called an 'inclusive or'
+'!' or 'not' returns the opposite of the value being operated upon
+these can be combined in an operation, parentheses can be used and will be treated as they would be in math 'PEMDAS'
 
