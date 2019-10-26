@@ -29,6 +29,7 @@ string methods:
 '.upcase' returns the string in all caps
 '.downcase' returns the string in all lowercase
 '.capitalize' returns the string with the first letter capitalized
+'.split' takes a string and returns an array
 
 '#' indicates a single-line comment
 anything in a comment is not read by the interpreter
@@ -72,4 +73,52 @@ logical/boolean operators are used to produce a 'true' or 'false' value by compa
 '||' or 'or' returns true if any of the values being operated upon are true. also called an 'inclusive or'
 '!' or 'not' returns the opposite of the value being operated upon
 these can be combined in an operation, parentheses can be used and will be treated as they would be in math 'PEMDAS'
+
+'.include?' checks if a string contains a substring. evaluates to true or false
+
+'.gsub' stands for global substitution. substitutes a desginated string with another
+syntax - string_to_change.gsub!(/string/, "new_string")
+
+loops:
+'while' loops will repeat as long as the terms are true
+must remember incrementer to prevent infinite loops 
+'until' loop basically backwards 'while' loop.  loop will repeat until terms become true
+'for' loop will repeat for a predetermined amount of time
+
+to assign and increment at the same time use '+=' rather than var = var + 1
+'-=' '*=' and '/=' all work as well
+
+to set a range, use 'low_number...high_number' this excludes the high_number
+to include the high_number, use two dots 'low_number..high_number'
+
+'next' can be used to skip a step if a certain parameter is met
+
+iterators:
+'loop' is the simplest iterator
+syntax to 'loop' is - 'var = 0 loop do var += 1 print "#{var} break if var > 5 end'
+do/end can be replaced by {/}
+
+'.each' is an iterator that will perform a task on every element of an object
+
+'.times' is an super compact 'for' loop
+
+arrays:
+arrays are variables with multiple values '[1, 2, 3, 4]'
+to access elements from the array, use an index value 'array[i]
+index values start at 0, not 1
+arrays can contain strings, booleans, numbers, and even other arrays
+arrays of arrays are called 'multidimensional arrays'
+
+hashes:
+a hash is like an array that contains key-value pairs
+hash = {key1 => value1, key2 => value2}
+this is hash "literal notation", literally describing the hash
+
+can also use 'Hash.new' to create hashes
+'hash = Hash.new' creates an empty hash
+add values to the empty hash with:
+'hash["key"] = "value"
+this is called 'bracket notation'
+
+access values of the hash just like an array 'hash[key]' will return the value of the key-vaue pair
 
