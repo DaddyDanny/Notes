@@ -122,3 +122,44 @@ this is called 'bracket notation'
 
 access values of the hash just like an array 'hash[key]' will return the value of the key-vaue pair
 
+'.sort_by' will sort a hash by the key or value
+hash.sort_by {|a, b| a} will sort by the keys
+
+reasons to separate code into methods:
+1. easier to find and fix bugs if it is split up and organized
+2. by assigning specific tasks to specific methods, you make your program less redundant and your code more reusable (called 'separation of concerns')
+3. you can do more with objects
+
+method syntax:
+1. header, includes "def", name of the method, and any arguments the method takes
+2. the body, describes procedures the method carries out. indented like all statements
+3. ends with "end"
+
+to call a method, simply type its name on a line along with any argument provided
+
+paramater is what you put between parenthesis while defining a method
+argument is what is between parenthesis while calling a method
+parenthesis are usually optional in Ruby, but recommended for readability
+
+splat arguments are arguments preceded by '*' and indicate one or more argument can be received
+
+'return' is used to hand a value back to the user or to another method
+
+a block is like a nameless method similar to anonymous functions in JS and lambdas in Python
+can be defined by either keywords 'do' and 'end' or by '{}'
+
+difference between method and block is that a method can be repeatedly called and used while a block is only used once
+
+sorting:
+'.sort' will sort an array alphabetically and numerically
+
+'combined comparison operator' compares 2 Ruby objects
+looks like <=>
+returns 0 if the first operand is equal to the second, 1 if it is greater than
+the second, and -1 if it is less than the second
+
+.sort can be used to sort in descending order with a combined comparison operator
+
+array.sort! { |a, b| b <=> a }
+
+
