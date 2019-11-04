@@ -162,4 +162,45 @@ the second, and -1 if it is less than the second
 
 array.sort! { |a, b| b <=> a }
 
+.reverse returns the array in opposite order, not necessarily backwards alphabetically
+
+if you try to access a key in a hash that doesn't exist, you return 'nil'
+along with 'false', 'nil' is one of two non-true values in Ruby
+every other value in Ruby is regarded as 'truthy'
+false and nil are not the same thing, false is 'not true' and nil is 'nothing at all'
+
+define a default value other than nil with Hash.new
+no_nil_hash = Hash.new("value other than nil")
+
+symbols:
+:symbol is an example of a symbol
+different from a string in that a string can have multiple copies while there can only be a single copy of a symbol
+
+.object_id tells the id of an object and can tell if two objects are exactly the same object
+the same string will have different values while the same symbol will have the same value
+
+symbol syntax:
+symbols always start with a colon (:)
+after that they must be a valid variable name
+this means after the colon must be a letter or underscore (_)
+after that, it can be any string of letters, numbers, and underscores
+
+symbols are primarily used as either a hash key or for referencing a method
+symbols make a good hash key because:
+1. they're immutable, can't be changed
+2. only one copy of any symbol exists, so they save memory
+3. symbols-as-keys are faster than strings-as-keys for the 2 previous reasons
+
+can convert between strings and symbols with the .to_s (to string) and .to_sym methods
+.intern will also 'internalize' a string into a symbol
+
+the hash syntax using '=>' is called hash rocket style
+this changed as of Ruby 1.9
+the new syntax is hash = {symbol: value}
+the colon at the end still makes the key a symbol
+
+.select is used to select a value from a hash
+
+rather than use .each and put both key and value in a block just to use only one
+use .each_key or .each_value to use only keys or only values
 
